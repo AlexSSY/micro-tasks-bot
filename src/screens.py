@@ -1,6 +1,9 @@
-def hello():
-    return "Hello user"
+class BaseScreen:
+    def __init__(self):
+        pass
 
-
-def help_screen():
-    return 
+    def __call__(self):
+        return {
+            "message_text": "Text of a message.",
+            "reply_keyboard": None
+        }
